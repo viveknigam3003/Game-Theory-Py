@@ -9,8 +9,8 @@ def saddlepoint(A):
     minmax = (A.min(axis=1))
     maximum = minmax[0]
     for i in minmax:
-           maxpos = i;
            if minmax[i] > maximum:
+                  maxpos = i
                   print (maxpos)
     print (minmax)
 
@@ -18,8 +18,8 @@ def saddlepoint(A):
     maxmin = (A.max(axis=0))
     minimum = maxmin[0]
     for i in maxmin:
-           minpos = i;
            if maxmin[i] < minimum:
+                  minpos = i
                   print (minpos)
 
     print (maxmin)
